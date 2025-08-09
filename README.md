@@ -25,7 +25,7 @@ Follow these steps to get the app running locally:
 
 1. **Clone this repository**
    
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/Kipkoebenji/AgriConnect.git)
 2. **Navigate into the project folder**
    
    cd your-repo-name
