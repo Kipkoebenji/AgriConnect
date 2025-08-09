@@ -1,6 +1,7 @@
 "use client";
 // pages/dashboard.js
 import { useState } from 'react';
+import { sampleMessages, sampleProduce, navigationItems } from '@/constants';
 import { 
   Wheat, 
   Cloud, 
@@ -25,17 +26,17 @@ export default function FarmerDashboard() {
     { id: 'messages', label: 'Messages', icon: MessageSquare }
   ];
 
-  const sampleProduce = [
-    { name: 'Tomatoes', quantity: '500 kg', status: 'Ready', price: '$2.50/kg' },
-    { name: 'Corn', quantity: '1200 kg', status: 'Growing', price: '$1.80/kg' },
-    { name: 'Carrots', quantity: '300 kg', status: 'Harvested', price: '$3.20/kg' }
-  ];
+  // const sampleProduce = [
+  //   { name: 'Tomatoes', quantity: '500 kg', status: 'Ready', price: '$2.50/kg' },
+  //   { name: 'Corn', quantity: '1200 kg', status: 'Growing', price: '$1.80/kg' },
+  //   { name: 'Carrots', quantity: '300 kg', status: 'Harvested', price: '$3.20/kg' }
+  // ];
 
-  const sampleMessages = [
-    { from: 'Green Valley Market', message: 'Interested in your organic tomatoes. Can we discuss bulk pricing?', time: '2 hours ago' },
-    { from: 'Farm Fresh Co.', message: 'Need 200kg carrots by Friday. Are they available?', time: '5 hours ago' },
-    { from: 'Local Restaurant', message: 'Weekly supply contract for fresh produce needed.', time: '1 day ago' }
-  ];
+  // const sampleMessages = [
+  //   { from: 'Green Valley Market', message: 'Interested in your organic tomatoes. Can we discuss bulk pricing?', time: '2 hours ago' },
+  //   { from: 'Farm Fresh Co.', message: 'Need 200kg carrots by Friday. Are they available?', time: '5 hours ago' },
+  //   { from: 'Local Restaurant', message: 'Weekly supply contract for fresh produce needed.', time: '1 day ago' }
+  // ];
 
   const renderContent = () => {
     switch (activeTab) {
